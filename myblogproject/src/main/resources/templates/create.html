@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h1>Blog Create Page</h1>
+
+<form th:action="@{create}" th:object="${blog}"  method="POST">
+  <p>Basligi daxil edin:<input type="text" th:field="*{basliq}"/></p>
+  <p>Meqaleni daxil edin:<textarea th:field="*{meqale}"></textarea>
+  <p>Tarixi daxil edin:<input type="text" th:field="*{tarix}"/></p>
+
+  <p><input type="submit" value="Create"/></p>
+
+
+</form>
+
+
+</body>
+</html>

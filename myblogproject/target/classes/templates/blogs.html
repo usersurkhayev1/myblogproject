@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h1>This is Blog Page</h1>
+
+<table>
+
+  <tr>
+    <th>id</th>
+    <th>basliq</th>
+    <th>meqale</th>
+    <th>tarix</th>
+  </tr>
+
+  <tr th:each="blog : ${blogs}">
+    <td th:text="${blog.id}"></td>
+    <td th:text="${blog.basliq}"></td>
+    <td th:text="${blog.meqale}"></td>
+    <td th:text="${blog.tarix}"></td>
+  </tr>
+
+</table>
+
+</body>
+</html>
